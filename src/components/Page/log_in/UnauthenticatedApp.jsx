@@ -1,6 +1,6 @@
 import React from "react";
 import useToken from "../../Hooks/useToken";
-
+import "./login.scss"
 function UnauthenticatedApp() {
 	const [setIsLoggedIn] = useToken(true);
 
@@ -29,17 +29,33 @@ function UnauthenticatedApp() {
 
 	return (
 		<>
+		<div className="body">
+		<div className="wrapper">
 			<form onSubmit={handleSubmit}>
-				<div>
+				<h1>Log in</h1>
+				<div className="input--box" >
 					<input type="email" name="email" defaultValue="eve.holt@reqres.in" />
 				</div>
+				
 
-				<div>
+				<div className="input--box">
 					<input type="password" name="password" defaultValue="cityslicka" />
 				</div>
 
-				<button type="submit">Log In</button>
+
+				<div className="remember--forgot">
+					<label><input type="checkbox" /></label>
+					<a href="#link">Forgot password?</a>
+				</div>
+
+				<button className="btn" type="submit">Log In</button>
+
+				<div className="register-link">
+					<p>Don't have an accaunt? <a href="#link">Register</a></p>
+				</div>
 			</form>
+			</div>
+		</div>
 		</>
 	);
 }
