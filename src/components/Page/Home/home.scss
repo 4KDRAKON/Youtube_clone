@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(2, 150px);
 
-    &--dark {
+    &--light {
         background-color: #FFF;
         max-width: 1920px;
         width: 100%;
@@ -14,7 +14,7 @@
         grid-template-columns: repeat(2, 150px);
     }
 
-    &--light {
+    &--dark {
         background-color: black;
         max-width: 1920px;
         width: 100%;
