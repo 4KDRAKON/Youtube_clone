@@ -11,14 +11,14 @@ import { Context } from "../../context/Localiz";
 import Home from "../../lib/img/header_uy.svg";
 import Trending from "../../lib/img/header__olov.svg";
 import subs from "../../lib/img/subcrise.svg";
-import lib from "../../lib/img/lirary.svg";
 import { NavLink } from "react-router-dom";
+
 function Player() {
     const { item_id } = useParams();
     const [item, setItem] = useState({});
     const [error, setError] = useState(null);
     const [films, setFilms] = useState([]);
-    const { lang } = useContext(Context);
+    const { lang, setLang } = useContext(Context);
     const Ref = useRef(null);
     const Add = () => {
         Ref.current.classList.add("chanel__div3__btn2");
@@ -119,10 +119,11 @@ function Player() {
             </NavLink>
           </li>
           <li className="header__item">
-            <NavLink className="Header__link" to={"/Dontwork"}>
-              <img src={lib} alt="logo" width={20} height={16} />
-             
-            </NavLink>
+          <select className="select" value={lang} onChange={(evt) => setLang(evt.target.value)}>
+              <option value="Uz">UZ</option>
+              <option value="RU">RU</option>
+              <option value="Eng">EN</option>
+            </select>
           </li>
       </ul>
         </div>

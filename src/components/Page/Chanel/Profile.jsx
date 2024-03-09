@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react"; // useState va useRef qo'shildi
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, NavLink } from "react-router-dom";
 import { Section } from "../Home/section";
 import { Header } from "../Home/Header";
 import "./chanel.scss";
@@ -14,11 +14,14 @@ import axios from "axios";
 import { Language } from "../../context/Context";
 import { useContext } from "react";
 import { Context } from "../../context/Localiz"; 
+import Home from "../../lib/img/header_uy.svg";
+import Trending from "../../lib/img/header__olov.svg";
+import subs from "../../lib/img/subcrise.svg";
 
 // document.title = "Profile"; // Bu qism o'chirildi
 
 function Chanel() {
-  const {lang} = useContext(Context)
+  const { lang, setLang } = useContext(Context);
   const { user_id } = useParams();
   const [user, setUser] = useState([]); // React.useState o'rniga useState
   const Ref = useRef(null); // React.useRef o'rniga useRef
@@ -175,7 +178,33 @@ function Chanel() {
 
 
 
-
+<ul className="header2">
+      <li className="header__item">
+            <Link className="Header__link" to={"/"}>
+              <img src={Home} alt="logo" width={20} height={19} />
+              
+            </Link>
+          </li>
+          <li className="header__item">
+            <NavLink className="Header__link" to={"/Dontwork"}>
+              <img src={Trending} alt="logo" width={16} height={21} />
+              
+            </NavLink>
+          </li>
+          <li className="header__item">
+            <NavLink className="Header__link" to={"/Dontwork"}>
+              <img src={subs} alt="logo" width={18} height={18} />
+              
+            </NavLink>
+          </li>
+          <li className="header__item">
+          <select className="select" value={lang} onChange={(evt) => setLang(evt.target.value)}>
+              <option value="Uz">UZ</option>
+              <option value="RU">RU</option>
+              <option value="Eng">EN</option>
+            </select>
+          </li>
+      </ul>
 
 
     </div>

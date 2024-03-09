@@ -5,10 +5,12 @@ import { Dontwork } from "../Dont_work/dontwork";
 import { Homemain } from "../Home/Home_main";
 import { Player } from "../player/player";
 import { Eror } from "../error/error";
+import { Context as Theme } from "../../context/Theme";
 function AuthenticatedApp() {
-
+ React.useContext(Theme)
+ console.log(Theme);
   return (
-    <div className="container">
+    <div className={`container container--${Theme}`}>
       <Routes>
         <Route path="/" element={<Homemain />} />
         <Route path="Home" element={<Homemain />} />

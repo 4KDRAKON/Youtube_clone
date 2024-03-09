@@ -9,12 +9,11 @@ import "./home.scss";
 import Home from "../../lib/img/header_uy.svg";
 import Trending from "../../lib/img/header__olov.svg";
 import subs from "../../lib/img/subcrise.svg";
-import lib from "../../lib/img/lirary.svg";
 import { NavLink } from "react-router-dom";
 
 function Section2() {
   const [films, setFilms] = useState([]);
-  const { lang } = useContext(Context); 
+  const { lang, setLang } = useContext(Context);
 
   useEffect(() => {
     const fetchFilms = async () => {
@@ -76,10 +75,13 @@ function Section2() {
             </NavLink>
           </li>
           <li className="header__item">
-            <NavLink className="Header__link" to={"/Dontwork"}>
-              <img src={lib} alt="logo" width={20} height={16} />
-             
-            </NavLink>
+            
+          <select className="select" value={lang} onChange={(evt) => setLang(evt.target.value)}>
+              <option value="Uz">UZ</option>
+              <option value="RU">RU</option>
+              <option value="Eng">EN</option>
+            </select>
+            
           </li>
       </ul>
     </div>

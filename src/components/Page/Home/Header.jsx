@@ -16,9 +16,11 @@ import music from "../../lib/img/misic.svg";
 import game from "../../lib/img/game.svg";
 import more from "../../lib/img/more_belgisi.svg";
 import Ylogo from "../../lib/img/youtube_logo.svg"
+import { Context as Theme } from "../../context/Theme";
 document.title = "YouTube";
 
 function Header() {
+  const {theme, setTheme} = React.useContext(Theme)
   const { lang, setLang } = useContext(Til);
   const [data2, setData2] = useState([]);
   const Ref = useRef(null);
@@ -61,6 +63,11 @@ function Header() {
               <option value="RU">RU</option>
               <option value="Eng">EN</option>
             </select>
+
+            <select className="nimaa" value={theme} onChange={(evt) => setTheme(evt.target.value)}>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
           </li>
           <li className="header__item">
             <Link className="Header__link" to={"/"}>
