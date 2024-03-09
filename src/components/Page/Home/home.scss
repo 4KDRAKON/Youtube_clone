@@ -1,7 +1,6 @@
 .container {
     max-width: 1920px;
     width: 100%;
-    // padding: 0 20px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 150px);
@@ -44,9 +43,9 @@
     display: block;
     position: fixed;
     height: 800px;
-    // overflow: scroll;
+    overflow: scroll;
     width: 230px;
-    z-index: 1;
+    z-index: 10;
     background-color: #FFF;
 
 }
@@ -145,7 +144,7 @@
 }
 
 .item{
-    width: 150px;
+    max-width: 150px;
 }
 
 .dontwork {
@@ -154,3 +153,13 @@
 }
 
 //////////////////////////////////////////////////////////////////////////////////
+/// 
+/// 
+/// 
+.header2{
+    max-width: 320px;
+    width: 100%;
+    display: none;
+    gap: 10px;
+    margin-left: -200px;
+}

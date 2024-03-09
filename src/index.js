@@ -6,7 +6,10 @@ import { Provider as Till } from './components/context/Localiz';
 import App from './App';
 import "./index.scss"
 import "../src/components/Page/Home/section2.scss"
+import "../src/components/Page/player/player.scss"
 import "../src/components/Page/Home/section3.scss"
+import "../src/components/Page/Home/section4.scss"
+import "../src/components/Page/Chanel/chanel.scss"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

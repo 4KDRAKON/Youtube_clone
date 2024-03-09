@@ -1,15 +1,48 @@
-.section3{
+.section3 {
     position: relative;
-    margin-left:40px;
-    
+    margin-left: 40px;
+
 }
-.section__render2{
-    display: flex;
+
+.section__render22 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     position: absolute;
     margin-top: 300px;
     gap: 105px;
-    
+
 }
-.render2__img{
+
+.render2__img {
     border-radius: 15px;
+}
+
+.section3__title {
+    font-family: "Mulish";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #C2C2C2;
+}
+
+.tittele {
+    position: absolute;
+    margin-left: 44px;
+    margin-top: -70px;
+    font-family: "Muli";
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #19202C;
+}
+.section3__title2{
+    font-family: "Muli";
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: left;
+color: #19202C;
 }

@@ -3,3 +3,12 @@ li {
     text-decoration: none;
     list-style: none;
 }
+:-webkit-scrollbar  {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #ff0000; 
+    border-radius: 12px;
+    width: 10px;
+  }

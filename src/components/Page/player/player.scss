@@ -1,0 +1,162 @@
+.text {
+   margin-top: 100px;
+   max-width: 500px;
+   width: 300%;
+   // display: flex;   
+}
+
+// .text2 {
+//    left: 500px;
+// }
+// .container .salom{
+//     margin-left: 900px;
+// }
+.player2__img {
+   border-radius: 10px;
+   margin-left: 50000px;
+}
+
+.text {
+   margin-left: 265px;
+}
+
+.player2__img {
+   border-radius: 15px;
+}
+
+.Player__img {
+   border-radius: 15px;
+}
+
+.Player__textlar {
+   font-family: "Muli";
+   font-size: 26px;
+   line-height: 45px;
+   letter-spacing: 0px;
+   text-align: left;
+   max-width: 5070px;
+   width: 100%;
+}
+
+.Player__watch {
+   font-family: "Muli";
+   font-size: 13px;
+   line-height: 16px;
+   letter-spacing: 0px;
+   text-align: left;
+   color: #C2C2C2;
+}
+
+.player__likes {
+   display: flex;
+   justify-content: space-between;
+   align-items: end;
+   max-width: 700px;
+   width: 300%;
+   margin-bottom: 100px;
+}
+.Player__accaunt__text{
+   max-width: 820px;
+   width: 200%;
+   opacity: 60%;
+   font-family: "Muli";
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0px;
+text-align: left;
+color: #000000;
+}
+
+.player__render__and__render{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   max-width: 1000px;
+   width: 300%;
+  gap: 190px;
+}
+.player__listtt{
+   margin-top: 100px;
+   
+}
+.layer__titlr{
+   max-width: 260px;
+   width: 200%;
+   font-family: "Muli";
+font-size: 20px;
+line-height: 33px;
+letter-spacing: 0px;
+text-align: left;
+color: #19202C;
+}
+.sjsjdsjdjsjd{
+   align-items: center;
+   display: flex;
+}
+.chanel__div3__btnn{
+   max-width: 154px;
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    width: 200%;
+    font-family: "Muli";
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    background-color: red;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-left: 45px;
+}
+
+
+
+
+@media only screen and (max-width: 837px) {
+  .text{
+   margin-left: auto;
+  }
+  .Player__img{
+   width: 320px;
+   height: 180px;
+  }
+
+
+.player__render__and__render{
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+}
+.Player__accaunt__text{
+   display: none;
+}
+.player__likes{
+   flex-direction: column;
+   margin-left: -180px;
+   text-align: left;
+}
+.hdjdudhudhuhhuhduehduehdeuhduehduedheudheuhdeuhdeuhdeushdesu{
+   width: 153px;
+   height: 50px;
+}
+
+.chanel__div3__btnn{
+   max-width: 114px;
+   font-size: 12px;
+   padding: 5px;
+}
+.player__listtt{
+   margin-top: -150px;
+}
+.player__accaunt{
+   text-align: center;
+}
+.Player__textlar{
+   font-size: 20px;
+}
+.player__likes{
+   flex-direction: column;
+   margin-left: -240px;
+   text-align: left;
+}
+   }
+
